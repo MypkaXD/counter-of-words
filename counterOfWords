@@ -8,7 +8,7 @@
 void readFile(char* buffer, long long* size) {
 
     FILE* file;
-    errno_t err = fopen_s(&file, "example.txt", "r");
+    errno_t err = fopen_s(&file, "voyna_i_mir.txt", "r");
 
     if (err != 0) {
         printf("File was not opened");
