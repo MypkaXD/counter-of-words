@@ -50,7 +50,7 @@ long long countWords(char* buffer, long long size) {
             if (isDivSymb(buffer[i])) break;
             if (buffer[i] == '-') break;
             if (buffer[i] == '[') break;
-            if (isDivSymb(buffer[i]) && isDivSymb(buffer[i + 1]) == '.' && isDivSymb(buffer[i + 2]) == '.' && isDivSymb(buffer[i+3]) == '.') {
+            if (isDivSymb(buffer[i]) && isDivSymb(buffer[i + 1])  && isDivSymb(buffer[i + 2])  && isDivSymb(buffer[i+3]) ) {
                 status = EXP_WORD_BEGIN;
                 break;
             }
